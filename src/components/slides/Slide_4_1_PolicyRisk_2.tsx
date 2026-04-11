@@ -64,51 +64,14 @@ export default function Slide_4_1_PolicyRisk_2() {
           animate="visible"
         >
           
-          {/* Card 1: BEAM Plus */}
-          <motion.div variants={itemVariants} className="group relative bg-white rounded-3xl p-8 border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-red-200 flex flex-col overflow-hidden">
-            {/* Top-left Number Indicator (Like original PPT) */}
-            <div className="absolute top-0 left-0 bg-red-800 text-white w-12 h-12 flex items-center justify-center text-2xl font-black rounded-br-2xl shadow-sm z-20">
-              1
-            </div>
-            {/* Giant Watermark Number */}
-            <div className="absolute -right-6 -bottom-10 text-[10rem] font-black text-slate-50 leading-none select-none pointer-events-none group-hover:text-red-50/50 transition-colors duration-500 z-0">
-              1
-            </div>
-            
-            <div className="relative z-10 flex flex-col h-full pl-6">
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <div className="inline-flex items-center gap-2 bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-3">
-                    Launched in 2010
-                  </div>
-                  <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">BEAM Plus</h3>
-                </div>
-                <div className="w-12 h-12 bg-red-50 text-red-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm border border-red-100 shrink-0">
-                  <Award strokeWidth={1.5} className="w-6 h-6" />
-                </div>
-              </div>
-              
-              {/* 5 Dots Indicator */}
-              <div className="flex gap-1.5 mb-4 shrink-0">
-                {[1, 2, 3, 4, 5].map((_, i) => (
-                  <div key={i} className="w-2 h-2 rounded-full bg-slate-200 group-hover:bg-red-800 transition-colors duration-300" style={{ transitionDelay: `${i * 50}ms` }}></div>
-                ))}
-              </div>
-
-              <p className="text-slate-600 text-base leading-relaxed mt-auto">
-                A leading assessment tool covering <span className="font-bold text-red-800">energy use and carbon emissions</span>, climate adaptation, and smart innovations. It has been widely applied across New Buildings, Existing Buildings, and Neighbourhoods.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Card 2: BEEO */}
+          {/* Card 1: BEEO */}
           <motion.div variants={itemVariants} className="group relative bg-white rounded-3xl p-8 border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-red-200 flex flex-col overflow-hidden">
             {/* Top-left Number Indicator */}
             <div className="absolute top-0 left-0 bg-red-800 text-white w-12 h-12 flex items-center justify-center text-2xl font-black rounded-br-2xl shadow-sm z-20">
-              2
+              1
             </div>
             <div className="absolute -right-6 -bottom-10 text-[10rem] font-black text-slate-50 leading-none select-none pointer-events-none group-hover:text-red-50/50 transition-colors duration-500 z-0">
-              2
+              1
             </div>
             
             <div className="relative z-10 flex flex-col h-full pl-6">
@@ -133,6 +96,42 @@ export default function Slide_4_1_PolicyRisk_2() {
 
               <p className="text-slate-600 text-base leading-relaxed mt-auto">
                 Regulates energy efficiency standards of building services. The <span className="font-bold text-red-800">2025 amendment</span> sets an aggressive target by extending scope, shortening audit intervals, and mandating technical disclosures.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Card 2: OTTV/RTTV (Cap. 123M) */}
+          <motion.div variants={itemVariants} className="group relative bg-white rounded-3xl p-8 border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-red-200 flex flex-col overflow-hidden">
+            {/* Top-left Number Indicator */}
+            <div className="absolute top-0 left-0 bg-red-800 text-white w-12 h-12 flex items-center justify-center text-2xl font-black rounded-br-2xl shadow-sm z-20">
+              2
+            </div>
+            <div className="absolute -right-6 -bottom-10 text-[10rem] font-black text-slate-50 leading-none select-none pointer-events-none group-hover:text-red-50/50 transition-colors duration-500 z-0">
+              2
+            </div>
+            
+            <div className="relative z-10 flex flex-col h-full pl-6">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <div className="inline-flex items-center gap-2 bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-3">
+                    Cap. 123M
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">OTTV & RTTV</h3>
+                  <div className="text-xs font-semibold text-slate-500 mt-1">Building (Energy Efficiency) Regulation</div>
+                </div>
+                <div className="w-12 h-12 bg-red-50 text-red-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm border border-red-100 shrink-0">
+                  <ThermometerSun strokeWidth={1.5} className="w-6 h-6" />
+                </div>
+              </div>
+              
+              <div className="flex gap-1.5 mb-4 shrink-0">
+                {[1, 2, 3, 4, 5].map((_, i) => (
+                  <div key={i} className="w-2 h-2 rounded-full bg-slate-200 group-hover:bg-red-800 transition-colors duration-300" style={{ transitionDelay: `${i * 50}ms` }}></div>
+                ))}
+              </div>
+
+              <p className="text-slate-600 text-base leading-relaxed mt-auto">
+                Mandates suitable Overall Thermal Transfer Value (<span className="font-bold text-red-800">OTTV</span>) and Residential Thermal Transfer Value (<span className="font-bold text-red-800">RTTV</span>) for envelopes. Both standards were rigorously <span className="font-bold text-red-800">tightened in 2019 and 2022</span>.
               </p>
             </div>
           </motion.div>
@@ -173,12 +172,13 @@ export default function Slide_4_1_PolicyRisk_2() {
             </div>
           </motion.div>
 
-          {/* Card 4: OTTV/RTTV (Cap. 123M) */}
+          {/* Card 4: BEAM Plus */}
           <motion.div variants={itemVariants} className="group relative bg-white rounded-3xl p-8 border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-red-200 flex flex-col overflow-hidden">
-            {/* Top-left Number Indicator */}
+            {/* Top-left Number Indicator (Like original PPT) */}
             <div className="absolute top-0 left-0 bg-red-800 text-white w-12 h-12 flex items-center justify-center text-2xl font-black rounded-br-2xl shadow-sm z-20">
               4
             </div>
+            {/* Giant Watermark Number */}
             <div className="absolute -right-6 -bottom-10 text-[10rem] font-black text-slate-50 leading-none select-none pointer-events-none group-hover:text-red-50/50 transition-colors duration-500 z-0">
               4
             </div>
@@ -187,16 +187,16 @@ export default function Slide_4_1_PolicyRisk_2() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <div className="inline-flex items-center gap-2 bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-3">
-                    Cap. 123M
+                    Launched in 2010
                   </div>
-                  <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">OTTV & RTTV</h3>
-                  <div className="text-xs font-semibold text-slate-500 mt-1">Building (Energy Efficiency) Regulation</div>
+                  <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">BEAM Plus</h3>
                 </div>
                 <div className="w-12 h-12 bg-red-50 text-red-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm border border-red-100 shrink-0">
-                  <ThermometerSun strokeWidth={1.5} className="w-6 h-6" />
+                  <Award strokeWidth={1.5} className="w-6 h-6" />
                 </div>
               </div>
               
+              {/* 5 Dots Indicator */}
               <div className="flex gap-1.5 mb-4 shrink-0">
                 {[1, 2, 3, 4, 5].map((_, i) => (
                   <div key={i} className="w-2 h-2 rounded-full bg-slate-200 group-hover:bg-red-800 transition-colors duration-300" style={{ transitionDelay: `${i * 50}ms` }}></div>
@@ -204,7 +204,7 @@ export default function Slide_4_1_PolicyRisk_2() {
               </div>
 
               <p className="text-slate-600 text-base leading-relaxed mt-auto">
-                Mandates suitable Overall Thermal Transfer Value (<span className="font-bold text-red-800">OTTV</span>) and Residential Thermal Transfer Value (<span className="font-bold text-red-800">RTTV</span>) for envelopes. Both standards were rigorously <span className="font-bold text-red-800">tightened in 2019 and 2022</span>.
+                A leading assessment tool covering <span className="font-bold text-red-800">energy use and carbon emissions</span>, climate adaptation, and smart innovations. It has been widely applied across New Buildings, Existing Buildings, and Neighbourhoods.
               </p>
             </div>
           </motion.div>
