@@ -148,7 +148,7 @@ export default function Slide_1_1_IndustryStatus() {
           <div className="w-full h-full bg-slate-200 rounded-3xl border border-slate-300 shadow-inner relative overflow-hidden group">
             {/* The Image */}
             <img 
-              src="/images/1.1.png" 
+              src="https://raw.githubusercontent.com/lk19981115-sys/CSE548/main/public/images/1.1.png"
               alt="Hong Kong Skyline in Smog" 
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               onError={(e) => {

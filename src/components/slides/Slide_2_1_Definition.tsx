@@ -49,8 +49,8 @@ export default function Slide_2_1_Definition() {
       >
         
         {/* Left Column: Definition */}
-        <motion.div variants={itemVariants} className="w-[40%] flex flex-col h-full">
-          <div className="bg-slate-100/80 rounded-3xl p-8 border border-slate-200/60 shadow-sm flex flex-col gap-6 h-full">
+        <div className="w-[40%] flex flex-col h-full">
+          <motion.div variants={itemVariants} className="bg-slate-100/80 rounded-3xl p-8 border border-slate-200/60 shadow-sm flex flex-col gap-6 h-full">
             <h2 className="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">
               Defining the Climate Risks
             </h2>
@@ -68,8 +68,8 @@ export default function Slide_2_1_Definition() {
                 they not only cause direct asset write-offs through physical damage but also trigger industry-wide business interruption, turning weather stress into deep financial risks.
               </p>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
         {/* Right Column: Loss Overview */}
         <div className="w-[60%] flex flex-col gap-6 h-full">

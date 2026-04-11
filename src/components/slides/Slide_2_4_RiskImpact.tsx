@@ -126,7 +126,7 @@ export default function Slide_2_4_RiskImpact() {
             <motion.div 
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="w-full bg-slate-50 rounded-2xl p-6 border border-slate-200 flex items-center gap-6 group hover:shadow-xl hover:border-blue-300 transition-all duration-300 cursor-default relative overflow-hidden"
+              className="w-full bg-blue-50/50 rounded-2xl p-6 border border-blue-100 flex items-center gap-6 group hover:shadow-xl hover:border-blue-300 transition-all duration-300 cursor-default relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/0 to-blue-500/5 group-hover:to-blue-500/10 transition-colors duration-300"></div>
               <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors duration-300 relative z-10">

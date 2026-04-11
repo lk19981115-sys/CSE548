@@ -52,7 +52,7 @@ export default function Slide_2_3_Rainstorm() {
         <motion.div variants={itemVariants} className="w-1/2 flex flex-col items-center justify-center h-full py-4">
           <div className="w-full h-full bg-slate-100 rounded-3xl border border-slate-200 shadow-inner relative overflow-hidden group">
             <img 
-              src="/images/2.3.png" 
+              src="https://raw.githubusercontent.com/lk19981115-sys/CSE548/main/public/images/2.3.png" 
               alt="Century Rainstorm Damage" 
               className="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500" 
             />
