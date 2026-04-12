@@ -56,7 +56,7 @@ export default function Slide_6_3_ResponseMeasures() {
               transition={{ duration: 0.8, delay: 0.3 }}
             ></motion.div>
             <p className="text-xl text-slate-700 font-medium text-left leading-relaxed">
-              Given the financial implications outlined above, responses are required at both the <span className="font-bold text-slate-900">firm</span> and <span className="font-bold text-slate-900">government</span> levels. The following measures are intended to reduce cost pressures, manage asset-related risks and support a more resilient and financially feasible transition in Hong Kong&apos;s building sector.
+              Given the financial implications outlined above, responses are required at both the firm and government levels. The following measures are intended to reduce cost pressures, manage asset-related risks and support a more resilient and financially feasible transition in Hong Kong&apos;s building sector.
             </p>
           </div>
         </motion.div>
@@ -164,7 +164,7 @@ export default function Slide_6_3_ResponseMeasures() {
               transition={{ duration: 0.6, delay: 1 }}
             ></motion.div>
             <p className="text-xl font-bold text-slate-800 text-left">
-              The transition to a more climate-resilient building sector depends not only on stricter standards, but also on <span className="text-red-800">financially feasible pathways</span> for implementation.
+              The transition to a more climate-resilient building sector depends not only on stricter standards, but also on financially feasible pathways for implementation.
             </p>
           </div>
         </motion.div>

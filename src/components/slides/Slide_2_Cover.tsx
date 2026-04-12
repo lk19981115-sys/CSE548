@@ -19,6 +19,7 @@ export default function Slide_2_Cover() {
     <ChapterDivider 
       chapterNumber="02"
       title={titleNode}
+      member={{ name: "ZHANG Yuyu", id: "25041847g" }}
     />
   );
 }

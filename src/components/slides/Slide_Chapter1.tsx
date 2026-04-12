@@ -19,6 +19,7 @@ export default function Slide_Chapter1() {
     <ChapterDivider 
       chapterNumber="01" 
       title={titleNode} 
+      member={{ name: "Cao Zhirui", id: "25062119g" }}
     />
   );
 }

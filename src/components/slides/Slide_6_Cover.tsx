@@ -15,6 +15,7 @@ export default function Slide_6_Cover() {
     <ChapterDivider
       chapterNumber="06"
       title={titleNode}
+      member={{ name: "ZHU Haotian", id: "25110696g" }}
     />
   );
 }

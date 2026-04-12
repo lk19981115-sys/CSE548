@@ -27,6 +27,10 @@ export default function Slide1Cover() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
+  const handleMemberClick = (slideIndex: number) => {
+    window.dispatchEvent(new CustomEvent("goToSlide", { detail: { slideIndex } }));
+  };
+
   return (
     <div className="relative flex items-center h-full w-full bg-slate-50 text-slate-800 overflow-hidden font-sans">
       
@@ -96,47 +100,65 @@ export default function Slide1Cover() {
           <motion.div variants={itemVariants} className="w-full max-w-3xl border-t-2 border-slate-200 mb-6"></motion.div>
 
           {/* Team Members List - Tighter gap, distinct hierarchy, unified font */}
-          <motion.div variants={itemVariants} className="grid grid-cols-2 gap-x-12 gap-y-3 text-left w-full max-w-3xl font-sans">
-            <div className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg">Z</div>
-              <div className="flex flex-col">
-                <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">ZHU Haotian</span>
-                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25110696g</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg">Z</div>
-              <div className="flex flex-col">
-                <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">ZHOU Jingya</span>
-                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25042867g</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg">Z</div>
-              <div className="flex flex-col">
-                <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">ZHU Yan</span>
-                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25047877g</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg">C</div>
+          <motion.div variants={itemVariants} className="grid grid-cols-2 gap-x-12 gap-y-3 text-left w-full max-w-3xl font-sans relative z-20">
+            <div 
+              onClick={() => handleMemberClick(2)}
+              className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md hover:bg-white/80 cursor-pointer hover:-translate-y-1 transition-all"
+            >
+              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg shrink-0">C</div>
               <div className="flex flex-col">
                 <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">Cao Zhirui</span>
-                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25062119g</span>
+                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25062119g (Part 1)</span>
               </div>
             </div>
-            <div className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg">Z</div>
+            <div 
+              onClick={() => handleMemberClick(5)}
+              className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md hover:bg-white/80 cursor-pointer hover:-translate-y-1 transition-all"
+            >
+              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg shrink-0">Z</div>
               <div className="flex flex-col">
                 <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">ZHANG Yuyu</span>
-                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25041847g</span>
+                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25041847g (Part 2)</span>
               </div>
             </div>
-            <div className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg">L</div>
+            <div 
+              onClick={() => handleMemberClick(11)}
+              className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md hover:bg-white/80 cursor-pointer hover:-translate-y-1 transition-all"
+            >
+              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg shrink-0">Z</div>
+              <div className="flex flex-col">
+                <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">ZHOU Jingya</span>
+                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25042867g (Part 3)</span>
+              </div>
+            </div>
+            <div 
+              onClick={() => handleMemberClick(16)}
+              className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md hover:bg-white/80 cursor-pointer hover:-translate-y-1 transition-all"
+            >
+              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg shrink-0">Z</div>
+              <div className="flex flex-col">
+                <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">ZHU Yan</span>
+                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25047877g (Part 4)</span>
+              </div>
+            </div>
+            <div 
+              onClick={() => handleMemberClick(26)}
+              className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md hover:bg-white/80 cursor-pointer hover:-translate-y-1 transition-all"
+            >
+              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg shrink-0">L</div>
               <div className="flex flex-col">
                 <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">LUO Kai</span>
-                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25108173g</span>
+                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25108173g (Part 5)</span>
+              </div>
+            </div>
+            <div 
+              onClick={() => handleMemberClick(30)}
+              className="flex items-center gap-3 bg-white/40 px-4 py-2.5 rounded-2xl border border-white/50 backdrop-blur-sm shadow-sm hover:shadow-md hover:bg-white/80 cursor-pointer hover:-translate-y-1 transition-all"
+            >
+              <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-lg shrink-0">Z</div>
+              <div className="flex flex-col">
+                <span className="font-black text-slate-800 text-lg tracking-wide leading-tight">ZHU Haotian</span>
+                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">25110696g (Part 6)</span>
               </div>
             </div>
           </motion.div>

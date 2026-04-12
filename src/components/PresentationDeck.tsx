@@ -33,9 +33,22 @@ export default function PresentationDeck({ slides }: PresentationDeckProps) {
       }
     };
 
+    const handleGoToSlide = (e: CustomEvent) => {
+      const index = e.detail?.slideIndex;
+      if (typeof index === 'number' && index >= 0 && index < slides.length) {
+        setDirection(index > currentSlide ? 1 : -1);
+        setCurrentSlide(index);
+      }
+    };
+
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [paginate]);
+    window.addEventListener("goToSlide" as any, handleGoToSlide);
+    
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("goToSlide" as any, handleGoToSlide);
+    };
+  }, [paginate, currentSlide, slides.length]);
 
   const slideVariants = {
     enter: (direction: number) => ({

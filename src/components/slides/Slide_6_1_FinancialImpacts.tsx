@@ -76,11 +76,11 @@ export default function Slide_6_1_FinancialImpacts() {
             </div>
             <div className="mb-4 relative z-10">
               <h3 className="text-4xl font-black text-slate-900 tracking-tighter group-hover:text-red-800 transition-colors leading-none">
-                HK$241.7m
+                HK$410.5m
               </h3>
             </div>
             <p className="text-lg text-slate-600 font-medium leading-snug relative z-10">
-              <span className="font-bold text-slate-800">Saola</span> property damage, business interruption and contractors&apos; all risks claims
+              Estimated total claims from <span className="font-bold text-slate-800">Super Typhoon Saola 2023</span>
             </p>
           </motion.div>
 

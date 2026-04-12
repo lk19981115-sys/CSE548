@@ -7,6 +7,10 @@ import { ReactNode } from "react";
 interface ChapterDividerProps {
   chapterNumber: string;
   title: string | ReactNode;
+  member?: {
+    name: string;
+    id: string;
+  };
 }
 
 // Animation Variants for staggering text reveal
@@ -46,7 +50,7 @@ const lineVariants = {
   }
 };
 
-export default function ChapterDivider({ chapterNumber, title }: ChapterDividerProps) {
+export default function ChapterDivider({ chapterNumber, title, member }: ChapterDividerProps) {
   // Handle both string (multiline via \n) and ReactNode cases
   const isString = typeof title === 'string';
   const titleLines = isString ? (title as string).split("\n").map(line => line.trim()) : [];
@@ -109,6 +113,24 @@ export default function ChapterDivider({ chapterNumber, title }: ChapterDividerP
             </div>
           )}
         </div>
+
+        {/* Member Info */}
+        {member && (
+          <div className="overflow-hidden py-1 mt-12">
+            <motion.div
+              variants={textRevealVariants}
+              className="flex items-center gap-4 bg-white/60 px-6 py-3 rounded-2xl border border-slate-200/50 backdrop-blur-sm shadow-sm w-fit"
+            >
+              <div className="w-12 h-12 rounded-full bg-red-900/10 flex items-center justify-center text-red-900 font-bold text-2xl shrink-0">
+                {member.name.charAt(0).toUpperCase()}
+              </div>
+              <div className="flex flex-col">
+                <span className="font-black text-slate-800 text-xl tracking-wide leading-tight">{member.name}</span>
+                <span className="text-slate-500 text-sm font-bold font-mono tracking-wider">{member.id}</span>
+              </div>
+            </motion.div>
+          </div>
+        )}
       </motion.div>
     </div>
   );

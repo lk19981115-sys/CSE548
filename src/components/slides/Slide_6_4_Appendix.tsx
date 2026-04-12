@@ -76,8 +76,8 @@ export default function Slide_6_4_Appendix() {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-700/50">
-                <p className="text-sm text-slate-400 mb-1">Property & Interruption Claims</p>
-                <p className="text-2xl font-black text-blue-400">HK$955.9m</p>
+                <p className="text-sm text-slate-400 mb-1">Estimated Total Claims</p>
+                <p className="text-2xl font-black text-blue-400">HK$1.60bn</p>
               </div>
               <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-700/50">
                 <p className="text-sm text-slate-400 mb-1">Direct Economic Losses</p>

@@ -10,6 +10,7 @@ export default function Slide_3_Cover() {
           <span className="font-normal text-slate-500 text-4xl tracking-normal">Chronic Climate Change</span>
         </div>
       }
+      member={{ name: "ZHOU Jingya", id: "25042867g" }}
     />
   );
 }
