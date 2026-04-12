@@ -6,19 +6,27 @@ import PolyULogo from "@/components/PolyULogo";
 const agendaItems = [
   {
     num: "01",
-    title: "Introduction",
+    title: "Climate Challenges",
   },
   {
     num: "02",
-    title: "Methodology",
+    title: "Risk Analysis & Economic Impact",
   },
   {
     num: "03",
-    title: "Results & Analysis",
+    title: "Physical Risk Assessment",
   },
   {
     num: "04",
-    title: "Conclusion",
+    title: "Policy and Legal Risk",
+  },
+  {
+    num: "05",
+    title: "Transition Risks",
+  },
+  {
+    num: "06",
+    title: "Financial Impacts & Response Measures",
   }
 ];
 
@@ -66,7 +74,7 @@ export default function Slide2Agenda() {
       {/* Main Grid Content */}
       <div className="flex-1 flex items-center justify-center pb-12">
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl"
+          className="grid grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -75,7 +83,7 @@ export default function Slide2Agenda() {
             <motion.div 
               key={item.num}
               variants={itemVariants}
-              className="group relative bg-white p-10 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-red-900/20 transition-all duration-300 flex flex-col justify-center min-h-[200px] overflow-hidden cursor-default"
+              className="group relative bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-red-900/20 transition-all duration-300 flex flex-col justify-center min-h-[180px] overflow-hidden cursor-default"
             >
               {/* Decorative Red Accent Line */}
               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-red-900/0 group-hover:bg-red-900/80 transition-colors duration-300"></div>
