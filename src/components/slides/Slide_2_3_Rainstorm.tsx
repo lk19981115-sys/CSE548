@@ -107,7 +107,7 @@ export default function Slide_2_3_Rainstorm() {
                 <div>
                   <h4 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-red-900 transition-colors">Economic Consequences</h4>
                   <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                    Direct economic losses reached <span className="font-bold text-red-800 text-xl mx-1">HK$5.9 billion</span>, far exceeding typhoon impacts, highlighting the extreme damage of flooding to urban infrastructure.
+                    Direct economic losses reached <span className="font-bold text-red-800 text-xl mx-1">HK$1739 million</span>, far exceeding typhoon impacts, highlighting the extreme damage of flooding to urban infrastructure.
                   </p>
                 </div>
               </div>

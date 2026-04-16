@@ -96,7 +96,7 @@ export default function Slide_2_2_Saola() {
                 <div>
                   <h4 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-red-900 transition-colors">Economic Consequences</h4>
                   <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                    Caused an estimated <span className="font-bold text-red-800 text-xl mx-1">HK$2.4 billion</span> in direct economic losses to infrastructure and businesses.
+                    Caused an estimated <span className="font-bold text-red-800 text-xl mx-1">HK$480 million</span> in direct economic losses to infrastructure and businesses.
                   </p>
                 </div>
               </div>

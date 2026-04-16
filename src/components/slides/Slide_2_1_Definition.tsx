@@ -85,7 +85,7 @@ export default function Slide_2_1_Definition() {
             </h3>
             
             <div className="text-[7rem] font-black text-white leading-none tracking-tighter mb-8 relative z-10 drop-shadow-2xl group-hover:scale-105 transition-transform duration-500">
-              HK$9.4 <span className="text-slate-300 ml-1">B</span>
+              HK$ 2.37 <span className="text-slate-300 ml-1">B</span>
             </div>
             
             <p className="text-slate-300 text-xl font-medium relative z-10 tracking-wide">
